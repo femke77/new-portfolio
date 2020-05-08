@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/Navbar';
 import Footer from './components/Footer';
-import { Container } from 'react-bootstrap';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
@@ -14,14 +13,11 @@ function App() {
     <>
       <Router>
         <NavBar />
-        <Container>
-        
-        </Container>
         <Switch>
-          {/* <Route path="/" component={About} />
+          <Route path="/" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
-          <Route component={NoMatch} /> */}
+          <Route component={NoMatch} />
         </Switch>
         <Footer />
       </Router>
