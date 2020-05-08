@@ -2,8 +2,7 @@ import React from 'react';
 import { Card, Row, Container } from 'react-bootstrap';
 import img from '../images/IMG_4096.JPG';
 
-
-//TODO: DRY w styling (use ... op)
+//TODO: DRY - styling (use ... op to apply multiple style obj)
 
 const imgStyle = {
   maxHeight: 365,
@@ -12,14 +11,14 @@ const imgStyle = {
 
 const cardStyle = {
   maxWidth: 300,
-  maxHeight: 366,
+  maxHeight: 367,
   marginLeft: "auto",
   marginRight: "auto",
   marginTop: 50
 }
 
 const cardStyle2 = {
-  maxWidth: 400,
+  maxWidth: 470,
   marginLeft: "auto",
   marginRight: "auto",
   marginTop: 50,
@@ -38,7 +37,7 @@ function About() {
             <Card.Text>
               {/* TODO: Rewrite this crap */}
               I graduated with a BS in Computer Science 2018, with honors, and I am eagerly looking forward to putting my skills to work. 
-              <br />
+              <br /> <br />
               I am lucky to have some innate traits that make me a naturally good coder, for example, I am very detail-oriented, patient, and logical. When combined with my love for collaboration and excellent social skills, I am unstoppable!
               <br /> <br />
               I just graduated UCLA Extension's Full Stack Boot Camp, and I want to work in web development. I do as much self-teaching as is feasible, but there is nothing like working with teams and having skilled developers helping you become a better programmer. This is what the boot camp gave me.
