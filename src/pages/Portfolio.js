@@ -14,21 +14,19 @@ import scraper from '../images/scraper.png'
 import books from '../images/react-google-books.png'
 
 const deckStyle = {
-  marginTop: 50,
   fontSize: 22,
-  textAlign: 'center'
+  textAlign: 'center',
+  marginTop: 20
 }
 
 const cardTop = {
-  // minHeight: 250,
   height: 'auto'
-  /* object-fit: cover; */
 }
 
 function Portfolio() {
   return (
     <Container>
-      <Row>
+      <Row style={{marginTop: 30}}>
         <CardDeck style={deckStyle}>
 
           <Card>
@@ -62,6 +60,7 @@ function Portfolio() {
             </Card.Link>
             </Card.Footer>
           </Card>
+
           <Card>
             <Card.Img variant="top" src={food} style={cardTop} />
             <Card.Body>
@@ -119,7 +118,7 @@ function Portfolio() {
           <Card>
             <Card.Img variant="top" src={rps} style={cardTop} />
             <Card.Body>
-              <Card.Title style={{ fontSize: 26 }}>RSP Multiplayer</Card.Title>
+              <Card.Title style={{ fontSize: 26 }}>RPS Multiplayer</Card.Title>
               <Card.Text>
                 Firebase app using the Real-time database to host a 2-player rock, paper, scissors
                 game. Chat up your opponent while you crush him!
@@ -177,7 +176,8 @@ function Portfolio() {
             <Card.Body>
               <Card.Title style={{ fontSize: 26 }}>Google Books</Card.Title>
               <Card.Text>
-                React app that hits GoogleBooks API and saves to MongoDB.
+                React app that hits GoogleBooks API and saves to MongoDB. <br />
+                <span style={{color: 'green'}}>Currently being completed! Check Back Soon.</span>
             </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -191,7 +191,7 @@ function Portfolio() {
         </CardDeck>
       </Row>
 
-      
+      {/* TEAM PROJECTS */}
       <Row style={{color: 'white'}}><h1 style={{marginLeft: 'auto', marginRight: 'auto', marginTop: 20}}>Team Projects</h1></Row>
       
       <Row>
@@ -214,8 +214,7 @@ function Portfolio() {
             </Card.Link>
             </Card.Footer>
           </Card>
-
-          
+       
           <Card>
             <Card.Img variant="top" src={crave} style={cardTop} />
             <Card.Body>
@@ -249,9 +248,7 @@ function Portfolio() {
           </Card>
           
         </CardDeck>
-
       </Row>
-
     </Container>
 
   )
