@@ -27,7 +27,7 @@ function Contact() {
             <Card.Link href="https://github.com/femke77">Github</Card.Link>
             <br />
             <Card.Text>
-              <Card.Link href="https://femke77.github.io/react_portfolio/src/pdf/resume 6.pdf" target="_blank">Resume</Card.Link>
+              <Card.Link href="https://femke77.github.io/react_portfolio/src/pdf/resume6.pdf" target="_blank">Resume</Card.Link>
             </Card.Text>
           </Card.Body>
         </Card>
